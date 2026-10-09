@@ -1,0 +1,14 @@
+{
+  "basic": {
+    "description": "基础设置",
+    "type": "object",
+    "items": {
+      "enable": {
+        "description": "启用 QQ 音乐公开资料补充",
+        "type": "bool",
+        "default": true,
+        "hint": "关闭后停止解析音乐分享卡片与匿名公开检索；插件不会发送独立消息。"
+      }
+    }
+  }
+}

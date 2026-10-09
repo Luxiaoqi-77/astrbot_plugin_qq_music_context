@@ -1,0 +1,7 @@
+name: astrbot_plugin_qq_music_context
+display_name: QQ 音乐作品理解
+version: 0.1.0
+author: Luxiaoqi-77
+desc: 从 QQ 音乐分享卡片提取歌曲身份，并把有来源的公开资料加入当前聊天请求。
+description: 只补充歌曲曲风与作品主题等公开资料，不发送独立回复，不下载音频或歌词。
+astrbot_version: ">=4.28.2"
