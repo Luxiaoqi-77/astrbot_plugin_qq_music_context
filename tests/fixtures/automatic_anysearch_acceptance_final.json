@@ -1,0 +1,152 @@
+{
+  "purpose": "One final live acceptance run through the staged plugin event entry; no model call or QQ message.",
+  "utc_date": "2026-10-09",
+  "plugin_version": "0.1.0",
+  "host_version": "4.28.2",
+  "identity": {
+    "title": "听妈妈的话",
+    "artist": "周杰伦",
+    "album": "",
+    "mid": ""
+  },
+  "retrieval": {
+    "entry": "QQMusicContextPlugin.capture_music_card_context",
+    "helper": "AstrBot 4.28.2 anonymous AnySearch helper with empty credential list",
+    "helper_invocation_count": 1,
+    "query_identity": {
+      "title": "听妈妈的话",
+      "artist": "周杰伦",
+      "album": ""
+    },
+    "fixed_query_intents": [
+      "曲风",
+      "歌曲介绍",
+      "歌词主题",
+      "创作背景"
+    ],
+    "normalized_result_count": 5,
+    "results": [
+      {
+        "title": "周杰伦《听妈妈的话》完整歌词与深度解析",
+        "url": "http://heji.baidu.com/view/d84b8b32955f804d2b160b4e767f5acfa1c783f5.html",
+        "safe_allowlisted_url": false,
+        "title_match": true,
+        "artist_match": true,
+        "identity_match": false,
+        "short_non_lyric_excerpt": "",
+        "evidence_retained": false,
+        "reason": "URL 未通过 HTTPS 白名单与安全校验"
+      },
+      {
+        "title": "听妈妈的话(完整cover) - 每日1首歌 - 小宇宙",
+        "url": "https://www.xiaoyuzhoufm.com/episode/66d03bb9a739a1feb6ae3c0b",
+        "safe_allowlisted_url": false,
+        "title_match": true,
+        "artist_match": true,
+        "identity_match": false,
+        "short_non_lyric_excerpt": "",
+        "evidence_retained": false,
+        "reason": "URL 未通过 HTTPS 白名单与安全校验"
+      },
+      {
+        "title": "周杰伦- 维基百科，自由的百科全书",
+        "url": "https://zh.wikipedia.org/zh-hans/%E5%91%A8%E6%9D%B0%E5%80%AB",
+        "safe_allowlisted_url": false,
+        "title_match": false,
+        "artist_match": true,
+        "identity_match": false,
+        "short_non_lyric_excerpt": "",
+        "evidence_retained": false,
+        "reason": "URL 未通过 HTTPS 白名单与安全校验; 标题/摘要未匹配卡片歌名（精确简繁写法）"
+      },
+      {
+        "title": "听妈妈的话 - 抖音百科",
+        "url": "https://m.baike.com/wikiid/7951543283447711619",
+        "safe_allowlisted_url": true,
+        "title_match": true,
+        "artist_match": true,
+        "identity_match": true,
+        "short_non_lyric_excerpt": "《听妈妈的话》曲风轻松温馨，浅显易懂的歌词流露出周杰伦孩子气的幽默，真挚动人不矫情作态，字里行间表达了周杰伦对妈妈的深厚感情。 由于歌词有潜移默化的教育意义， ...",
+        "evidence_retained": true,
+        "reason": "通过作品级歌名、歌手和白名单 URL 匹配；主题不足时仅允许一次页面跟进"
+      },
+      {
+        "title": "周杰伦和他的音乐品味到底如何？看完这首歌背后的故事很多人都沉默了！",
+        "url": "https://zhuanlan.zhihu.com/p/50348934",
+        "safe_allowlisted_url": false,
+        "title_match": true,
+        "artist_match": true,
+        "identity_match": false,
+        "short_non_lyric_excerpt": "",
+        "evidence_retained": false,
+        "reason": "URL 未通过 HTTPS 白名单与安全校验"
+      }
+    ],
+    "page_follow": null,
+    "lookup_elapsed_seconds_from_card_event": 3.501,
+    "fits_3_5_second_debounce_plus_9_second_wait": true,
+    "result_shape": {
+      "live_attributes_read": [
+        "title",
+        "url",
+        "snippet"
+      ],
+      "normalized_class_from_same_host_helper": "SearchResult",
+      "host_helper_contract": "uses item.snippet or item.content and returns the normalized value as SearchResult.snippet",
+      "host_source": "AstrBot 4.28.2 astrbot/core/tools/web_search_tools.py"
+    }
+  },
+  "provider_request": {
+    "class": "ProviderRequest",
+    "context_block_count": 1,
+    "injected_once": true,
+    "contains_sourced_public_fact": true,
+    "accepted_source_fields": [
+      {
+        "field": "歌词主题",
+        "source": "https://m.baike.com/wikiid/7951543283447711619",
+        "value": "周杰伦对妈妈的深厚感情",
+        "confidence": "medium",
+        "scope": "work",
+        "evidence": "《听妈妈的话》曲风轻松温馨，浅显易懂的歌词流露出周杰伦孩子气的幽默，真挚动人不矫情作态，字里行间表达了周杰伦对妈妈的深厚感情。"
+      }
+    ],
+    "fact_fields": {
+      "歌曲介绍": {
+        "value": "unknown（未找到可核验的公开字段）",
+        "scope": "recording",
+        "confidence": "unknown",
+        "source": "",
+        "evidence": "",
+        "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown"
+      },
+      "曲风": {
+        "value": "unknown（未找到可核验的公开字段）",
+        "scope": "recording",
+        "confidence": "unknown",
+        "source": "",
+        "evidence": "",
+        "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown"
+      },
+      "歌词主题": {
+        "value": "周杰伦对妈妈的深厚感情",
+        "scope": "work",
+        "confidence": "medium",
+        "source": "https://m.baike.com/wikiid/7951543283447711619",
+        "evidence": "《听妈妈的话》曲风轻松温馨，浅显易懂的歌词流露出周杰伦孩子气的幽默，真挚动人不矫情作态，字里行间表达了周杰伦对妈妈的深厚感情。",
+        "reason": ""
+      }
+    },
+    "provider_or_model_called": false,
+    "qq_message_sent": false
+  },
+  "privacy": {
+    "query_contains_only_card_identity_and_fixed_intents": true,
+    "query_contains_song_mid": false,
+    "private_chat_text_or_identifiers_sent": false,
+    "api_key_or_cookie_used": false,
+    "paid_fallback_or_retry": false,
+    "audio_downloaded": false,
+    "full_lyrics_saved": false
+  }
+}

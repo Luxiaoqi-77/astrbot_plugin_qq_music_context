@@ -1,0 +1,57 @@
+{
+  "purpose": "Offline replay of one short, non-lyric statement from a live direct read of a public Baidu Baike page; not an AnySearch response archive.",
+  "identity": {
+    "title": "听妈妈的话",
+    "artist": "周杰伦",
+    "album": "",
+    "mid": ""
+  },
+  "source": {
+    "title": "听妈妈的话（2006年周杰伦演唱的嘻哈说唱歌曲）",
+    "url": "https://wapbaike.baidu.com/item/%E5%90%AC%E5%A6%88%E5%A6%88%E7%9A%84%E8%AF%9D/79604",
+    "snippet": "字里行间表达了他对妈妈的深厚感情",
+    "evidence_excerpt": "字里行间表达了他对妈妈的深厚感情",
+    "excerpt_type": "non-lyric prose"
+  },
+  "expected_fields": {
+    "歌词主题": {
+      "value": "对妈妈的深厚感情",
+      "scope": "work",
+      "confidence": "medium",
+      "source": "https://wapbaike.baidu.com/item/%E5%90%AC%E5%A6%88%E5%A6%88%E7%9A%84%E8%AF%9D/79604",
+      "evidence": "字里行间表达了他对妈妈的深厚感情。"
+    },
+    "曲风": {
+      "value": "嘻哈说唱",
+      "scope": "work",
+      "confidence": "medium",
+      "source": "https://wapbaike.baidu.com/item/%E5%90%AC%E5%A6%88%E5%A6%88%E7%9A%84%E8%AF%9D/79604",
+      "evidence": "听妈妈的话（2006年周杰伦演唱的嘻哈说唱歌曲）",
+      "reason": ""
+    },
+    "歌曲介绍": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "scope": "recording",
+      "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown"
+    }
+  },
+  "privacy": {
+    "lyrics_saved": false,
+    "audio_downloaded": false,
+    "private_chat_text_included": false,
+    "api_key_or_cookie_used": false
+  },
+  "retrieval": {
+    "utc_date": "2026-10-09",
+    "method": "direct public page read",
+    "source_url": "https://wapbaike.baidu.com/item/%E5%90%AC%E5%A6%88%E5%A6%88%E7%9A%84%E8%AF%9D/79604",
+    "source_fields_observed": [
+      "title",
+      "artist in page heading",
+      "short prose excerpt"
+    ],
+    "lyrics_section_present_on_page": true,
+    "full_lyrics_saved": false,
+    "audio_downloaded": false
+  }
+}

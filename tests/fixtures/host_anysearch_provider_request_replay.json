@@ -1,0 +1,103 @@
+{
+  "purpose": "Single live anonymous AstrBot AnySearch helper response replayed through the actual field parser, plugin context builder, and host ProviderRequest type without calling a model or sending a message.",
+  "source_repository_version": "Not applicable to runtime search; parser source/version is documented separately.",
+  "retrieval": {
+    "utc_date": "2026-10-09",
+    "helper_calls": 1,
+    "helper_returned_normally": true,
+    "error_type": "",
+    "provider_settings": {
+      "websearch_anysearch_key": []
+    },
+    "query_identity": {
+      "title": "听妈妈的话",
+      "artist": "周杰伦",
+      "album": "",
+      "mid": ""
+    },
+    "fixed_intents": [
+      "曲风",
+      "歌曲介绍",
+      "歌词主题",
+      "创作背景"
+    ],
+    "query": "\"听妈妈的话\" \"周杰伦\" 曲风 歌曲介绍 歌词主题 创作背景",
+    "payload_shape": {
+      "max_results": 5,
+      "format": "json",
+      "zone": "cn",
+      "language": "zh-CN"
+    },
+    "normalized_result_count": 5,
+    "raw_response_saved": false,
+    "other_result_snippets_saved": false
+  },
+  "source_evidence": null,
+  "field_results": {
+    "歌曲介绍": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "source": "",
+      "evidence": "",
+      "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown",
+      "confidence": "unknown",
+      "scope": "recording"
+    },
+    "曲风": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "source": "",
+      "evidence": "",
+      "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown",
+      "confidence": "unknown",
+      "scope": "recording"
+    },
+    "歌词主题": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "source": "",
+      "evidence": "",
+      "reason": "没有同时匹配歌名与歌手的作品级来源",
+      "confidence": "unknown",
+      "scope": "work"
+    }
+  },
+  "provider_request_test": {
+    "class": "astrbot.core.provider.entities.ProviderRequest",
+    "constructed_from_host_runtime": true,
+    "context_block_count": 1,
+    "accepted_fact_fields": [],
+    "provider_or_model_called": false,
+    "qq_message_sent": false
+  },
+  "privacy": {
+    "user_chat_text_in_query": false,
+    "user_or_session_ids_in_query": false,
+    "song_mid_in_query": false,
+    "api_key_or_cookie_used": false,
+    "paid_fallback_or_retry": false,
+    "full_lyrics_saved": false,
+    "audio_downloaded": false
+  },
+  "failure_analysis": {
+    "host_version_checked": "4.28.2",
+    "host_helper_normalized_result_shape": [
+      "title",
+      "url",
+      "snippet"
+    ],
+    "raw_content_field_handling": "The host uses item.snippet or item.content to produce SearchResult.snippet.",
+    "current_parser_accepts": {
+      "mapping_fields": [
+        "title",
+        "url",
+        "snippet or content"
+      ],
+      "object_fields": [
+        "title",
+        "url",
+        "snippet or content"
+      ]
+    },
+    "identity_normalization": "Punctuation removal and case-folding only; no Simplified/Traditional conversion or alias dictionary.",
+    "prior_unknown_cause": "Not recoverable: the five per-item normalized results were discarded before matching, so source identity and evidence rejection cannot be distinguished.",
+    "follow_up_anysearch_request_made": false
+  }
+}

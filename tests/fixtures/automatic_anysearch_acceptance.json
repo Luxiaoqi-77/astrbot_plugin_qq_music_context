@@ -1,0 +1,189 @@
+{
+  "retrieval": {
+    "utc_date": "2026-10-09",
+    "method": "actual staged plugin _request_public_search -> AstrBot 4.28.2 _anysearch_search",
+    "helper_called_once": true,
+    "helper_returned_normally": true,
+    "error_type": "",
+    "provider_settings": {
+      "websearch_anysearch_key": []
+    },
+    "query": "\"听妈妈的话\" \"周杰伦\" 曲风 歌曲介绍 歌词主题 创作背景",
+    "result_count": 5,
+    "raw_anysearch_json_saved": false,
+    "per_item_normalized_results_saved": true
+  },
+  "identity": {
+    "title": "听妈妈的话",
+    "artist": "周杰伦",
+    "album": "",
+    "mid": ""
+  },
+  "helper_result_shape": {
+    "class_names": [
+      "SearchResult"
+    ],
+    "fields_observed": [
+      "title",
+      "url",
+      "snippet"
+    ],
+    "host_content_fallback_contract": "helper maps item.snippet or item.content into SearchResult.snippet"
+  },
+  "per_item": [
+    {
+      "index": 1,
+      "result_type": "SearchResult",
+      "fields_observed": [
+        "title",
+        "url",
+        "snippet"
+      ],
+      "title": "周杰伦《听妈妈的话》完整歌词与深度解析",
+      "source_url": "",
+      "source_host_allowlisted": false,
+      "url_query_redacted_for_audit": false,
+      "title_match": true,
+      "artist_match": true,
+      "identity_match": false,
+      "snippet_excerpt": "《听妈妈的话》收录于周杰伦2006年发行的专辑《依然范特西》中，由周杰伦本人包揽词曲创作及演唱。",
+      "excerpt_disposition": "one short metadata/prose clause retained",
+      "filter_reasons": [
+        "source URL is outside the allowlist or unsafe"
+      ]
+    },
+    {
+      "index": 2,
+      "result_type": "SearchResult",
+      "fields_observed": [
+        "title",
+        "url",
+        "snippet"
+      ],
+      "title": "听妈妈的话(完整cover) - 每日1首歌",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/66d03bb9a739a1feb6ae3c0b",
+      "source_host_allowlisted": false,
+      "url_query_redacted_for_audit": false,
+      "title_match": true,
+      "artist_match": true,
+      "identity_match": false,
+      "snippet_excerpt": null,
+      "excerpt_disposition": "no short, non-lyric metadata/prose clause retained",
+      "filter_reasons": [
+        "source URL is outside the allowlist or unsafe"
+      ]
+    },
+    {
+      "index": 3,
+      "result_type": "SearchResult",
+      "fields_observed": [
+        "title",
+        "url",
+        "snippet"
+      ],
+      "title": "周杰伦- 维基百科，自由的百科全书",
+      "source_url": "https://zh.wikipedia.org/zh-hans/%E5%91%A8%E6%9D%B0%E5%80%AB",
+      "source_host_allowlisted": false,
+      "url_query_redacted_for_audit": false,
+      "title_match": false,
+      "artist_match": true,
+      "identity_match": false,
+      "snippet_excerpt": "其音乐风行于大中华地区及全球各地的华人社群，并对华语乐坛产生重大影响，有“华语 ...",
+      "excerpt_disposition": "one short metadata/prose clause retained",
+      "filter_reasons": [
+        "source URL is outside the allowlist or unsafe",
+        "song title absent from result title/snippet"
+      ]
+    },
+    {
+      "index": 4,
+      "result_type": "SearchResult",
+      "fields_observed": [
+        "title",
+        "url",
+        "snippet"
+      ],
+      "title": "听妈妈的话 - 抖音百科",
+      "source_url": "https://m.baike.com/wikiid/7951543283447711619",
+      "source_host_allowlisted": false,
+      "url_query_redacted_for_audit": false,
+      "title_match": true,
+      "artist_match": true,
+      "identity_match": false,
+      "snippet_excerpt": null,
+      "excerpt_disposition": "no short, non-lyric metadata/prose clause retained",
+      "filter_reasons": [
+        "source URL is outside the allowlist or unsafe"
+      ]
+    },
+    {
+      "index": 5,
+      "result_type": "SearchResult",
+      "fields_observed": [
+        "title",
+        "url",
+        "snippet"
+      ],
+      "title": "周杰伦和他的音乐品味到底如何？看完这首歌背后的故事 ...",
+      "source_url": "https://zhuanlan.zhihu.com/p/50348934",
+      "source_host_allowlisted": false,
+      "url_query_redacted_for_audit": false,
+      "title_match": true,
+      "artist_match": true,
+      "identity_match": false,
+      "snippet_excerpt": "JAY的作品虽然演唱方式带有嘻哈文化（rap、咬字 ...",
+      "excerpt_disposition": "one short metadata/prose clause retained",
+      "filter_reasons": [
+        "source URL is outside the allowlist or unsafe"
+      ]
+    }
+  ],
+  "parser_facts": {
+    "歌曲介绍": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "source": "",
+      "evidence": "",
+      "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown",
+      "confidence": "unknown",
+      "scope": "recording"
+    },
+    "曲风": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "source": "",
+      "evidence": "",
+      "reason": "卡片没有可核验的专辑/版本；录音级字段保持 unknown",
+      "confidence": "unknown",
+      "scope": "recording"
+    },
+    "歌词主题": {
+      "value": "unknown（未找到可核验的公开字段）",
+      "source": "",
+      "evidence": "",
+      "reason": "没有同时匹配歌名与歌手的作品级来源",
+      "confidence": "unknown",
+      "scope": "work"
+    }
+  },
+  "provider_request": {
+    "class": "astrbot.core.provider.entities.ProviderRequest",
+    "nonempty_external_context": true,
+    "context_block_count": 1,
+    "accepted_fact_fields": [],
+    "injected_context_block": "QQ 音乐公开资料（匿名检索）\n{\"歌名\":\"听妈妈的话\",\"歌手\":\"周杰伦\",\"专辑\":\"\",\"公开资料\":{\"歌曲介绍\":{\"value\":\"unknown（未找到可核验的公开字段）\",\"scope\":\"recording\",\"confidence\":\"unknown\",\"source\":\"\",\"evidence\":\"\",\"reason\":\"卡片没有可核验的专辑/版本；录音级字段保持 unknown\"},\"曲风\":{\"value\":\"unknown（未找到可核验的公开字段）\",\"scope\":\"recording\",\"confidence\":\"unknown\",\"source\":\"\",\"evidence\":\"\",\"reason\":\"卡片没有可核验的专辑/版本；录音级字段保持 unknown\"},\"歌词主题\":{\"value\":\"unknown（未找到可核验的公开字段）\",\"scope\":\"work\",\"confidence\":\"unknown\",\"source\":\"\",\"evidence\":\"\",\"reason\":\"没有同时匹配歌名与歌手的作品级来源\"}},\"资料规则\":\"保留来源、范围、置信度和短证据；没有可靠证据的字段为 unknown。待模型分析的来源摘要仍是未分类资料，不是已核实事实；不含歌词或音频。\"}",
+    "provider_or_model_called": false,
+    "qq_message_sent": false,
+    "injected_flag": true
+  },
+  "privacy": {
+    "query_contains_private_chat_text": false,
+    "query_contains_user_or_session_ids": false,
+    "api_key_or_cookie_used": false,
+    "paid_fallback_or_retry": false,
+    "full_lyrics_saved": false,
+    "audio_downloaded": false
+  },
+  "limitations": {
+    "simplified_traditional_or_alias_normalization": "not implemented; exact simplified title/artist match only",
+    "source_page_fetch": "not performed by this acceptance script; requires a matching safe search result and insufficient snippet evidence"
+  }
+}
